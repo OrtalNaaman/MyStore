@@ -51,3 +51,7 @@ Install UCG App with npm
 
 <img width="922" alt="manage" src="https://github.com/OrtalNaaman/UCG-Client-App/assets/97459646/21ce0b02-ab15-4d52-b57a-9a0790662a3a">
 
+<img width="221" alt="responsive" src="https://github.com/OrtalNaaman/UCG-Client-App/assets/97459646/121fd46d-7598-4453-9666-b49ef4fe4a1f">
+
+
+
