@@ -1,7 +1,7 @@
 ## UCG Store App
 Online clothes store appliaction.
 UCG- Unique Clothes for Girls and baby girls store app provides unique and fashionable clothing options for girls and baby girls.
-The store app includes 3 authorization levels for users with different action options: guest, user and admin.
+The store app includes 3 authorization levels for users with different action options: Guest, User and Admin.
 
 
 ## Table of Contents
@@ -34,8 +34,9 @@ Install UCG App with npm
 ## API Access
 | User              | Password                   | Access       |  Access & Abilities           |        
 | :---------------  | :------------------------- | :----------- | :-----------
-| admin@email.com   | 123!Qaz123                 | Administrator|    |
-| netush@gmail.com  | Neta@123                   | User         |    |
+| admin@email.com   | 123!Qaz123                 | Administrator|   The only role that have permission to watch all users orders and update their delivery status. Admin can also purchase products. |
+| netush@gmail.com  | Neta@123                   | User         |   Only connected user can purchase products.  |
+| Not registered user | -                  | Guest        |  Limited access. Guest can't purchase products. |
 
 ## Interface images
 
