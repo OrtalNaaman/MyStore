@@ -10,9 +10,10 @@ The application has the option of adding, editing and deleting products. 3 autho
 - [Installation](#installation)
 - [API Access](#api-access)
 - [Interface images](#interface-images)
-- [Feedbacks](#feedbacks) 
 
 ## Features
+- Search bar//
+- Toasting messages.
 - Active cart and products.
 - Orders Management panel.
 
