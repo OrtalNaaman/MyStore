@@ -28,8 +28,9 @@ The application has the option of adding, editing and deleting products. 3 autho
 
 Install UCG App with npm
 
-bash
+```bash
   npm install
+```
 
 
 ## API Access
@@ -42,8 +43,3 @@ bash
 <img width="925" alt="Home" src="https://github.com/OrtalNaaman/MyStore/assets/97459646/3eb1e360-9496-4a19-83d3-eb0010867db8">
 
 
-
-## Feedbacks
-
-On this occasion, we would be happy to recommend the website that enables easy registration and learning of online books in a variety of fields
-[TradePub.com](https://programminglanguage.tradepub.com/).
