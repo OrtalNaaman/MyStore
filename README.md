@@ -1,27 +1,49 @@
-# MyStore
+## UCG App
+Online book store appliaction and online book and documents reader.
+EBook simulates online books store and also reading books online in the application itself.
+The application has the option of adding, editing and deleting products. 3 authorization levels for users with different action options: visitor, user and admin.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
 
-## Development server
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [API Access](#api-access)
+- [Interface images](#interface-images)
+- [Feedbacks](#feedbacks) 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- Active cart and products.
+- Orders Management panel.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack
+- Backend: C# ASP.NET Core.
+- Frontend: Angular 15.2.0, Ng-Bootstrap, Bootstrap.
+- Database: Microsoft SQL server with Entity Framework.
+- Authentication: JWT & Identity Core.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+Install UCG App with npm
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+bash
+  npm install
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## API Access
+| User              | Password                   | Access       |  Access & Abilities           |        
+| :---------------  | :------------------------- | :----------- | :-----------
+| admin@email.com   | Aa@1234                    | Administrator|    |
+| admin@email.com   | Aa@1234                    | Administrator|    |
 
-## Further help
+## Interface images
+<img width="925" alt="Home" src="https://github.com/OrtalNaaman/MyStore/assets/97459646/3eb1e360-9496-4a19-83d3-eb0010867db8">
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Feedbacks
+
+On this occasion, we would be happy to recommend the website that enables easy registration and learning of online books in a variety of fields
+[TradePub.com](https://programminglanguage.tradepub.com/).
