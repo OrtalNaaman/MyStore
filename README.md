@@ -1,7 +1,7 @@
 ## UCG App
-Online book store appliaction and online book and documents reader.
-EBook simulates online books store and also reading books online in the application itself.
-The application has the option of adding, editing and deleting products. 3 authorization levels for users with different action options: visitor, user and admin.
+Online clothes store appliaction.
+UCG- Unique Clothes for Girls and baby girls store app provides unique and fashionable clothing options for girls and baby girls.
+The store app includes 3 authorization levels for users with different action options: guest, user and admin.
 
 
 ## Table of Contents
