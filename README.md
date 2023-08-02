@@ -12,7 +12,7 @@ The application has the option of adding, editing and deleting products. 3 autho
 - [Interface images](#interface-images)
 
 ## Features
-- Search bar//
+- Search bar includes a purchase option.
 - Toasting messages.
 - Active cart and products.
 - Orders Management panel.
@@ -37,8 +37,8 @@ Install UCG App with npm
 ## API Access
 | User              | Password                   | Access       |  Access & Abilities           |        
 | :---------------  | :------------------------- | :----------- | :-----------
-| admin@email.com   | Aa@1234                    | Administrator|    |
-| admin@email.com   | Aa@1234                    | Administrator|    |
+| admin@email.com   | 123!Qaz123                 | Administrator|    |
+| netush@gmail.com  | Neta@123                   | User         |    |
 
 ## Interface images
 <img width="925" alt="Home" src="https://github.com/OrtalNaaman/MyStore/assets/97459646/3eb1e360-9496-4a19-83d3-eb0010867db8">
