@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;300&family=Caveat&family=Source+Sans+Pro:wght@600&display=swap");
+
+.main-footer {
+  background-color: white;
+  color: rgb(64 7 106 / 90%);
+  padding: 0.25em 0;
+}
+
+.main-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav {
+  justify-content: center;
+}
+
+.footer-nav li {
+  padding: 0 0.5em;
+}
+
+.footer-nav img {
+  width: 2em;
+  height: 2em;
+}
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: rgba(194, 99, 99, 0.3);
+}
+.allRights {
+  font-size: x-small;
+}

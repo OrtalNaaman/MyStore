@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;300&family=Caveat&family=Source+Sans+Pro:wght@600&display=swap");
+* {
+  padding: 5px;
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-between;
+}
+.form-inline {
+  display: flex;
+  max-height: 3em;
+}
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgb(161 77 195 / 55%);
+  --bs-navbar-hover-color: rgb(96 22 167 / 70%);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: rgb(183 24 231 / 90%);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+}
+.navbar-brand {
+  color: rgb(64 7 106 / 90%);
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--bs-navbar-active-color);
+}
+#cart-icon {
+  cursor: pointer;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.btn {
+  color: white;
+  background-color: rgba(116, 42, 168, 0.9);
+  border: none;
+  border-radius: 0.3em;
+  max-height: 4em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.btn-primary:hover {
+  background-color: #b809e4;
+  color: white;
+}
+.search-icon {
+  color: #b809e4;
+  position: relative;
+  top: -35px;
+  left: 155px;
+}
+.form-control {
+  border-color: rgba(116, 42, 168, 0.9);
+  color: rgba(116, 42, 168, 0.9);
+  margin-right: 0.2em;
+  max-width: 12em;
+  max-height: 3em;
+}
+.search-container {
+  position: relative;
+  top: -0.8em;
+}
+.search-icon {
+  color: #b809e4;
+  margin-right: 5px;
+}
+.search-results {
+  position: absolute;
+  top: 100%;
+  width: 12rem;
+  height: 16rem;
+  left: 0.5rem;
+  overflow-y: auto;
+  background-color: white;
+  font-family: "Caveat", cursive;
+  color: #b809e4;
+  border: 1px solid #ccc;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.result-item {
+  padding: 5px;
+  cursor: pointer;
+}
+.result-item:hover {
+  background-color: #f2f2f2;
+}
+.btns-search-container {
+  display: flex;
+  font-size: x-small;
+}
+.shop-item-image {
+  height: 12rem;
+  width: 8rem;
+}
+.sign-out-btn {
+  color: white;
+  background-color: rgba(180, 51, 180, 0.9);
+  border: none;
+  border-radius: 1.8em;
+  max-height: 1.6em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.material-symbols-outlined {
+  font-size: 1rem;
+  padding: 0;
+  position: relative;
+  top: -0.15em;
+}
