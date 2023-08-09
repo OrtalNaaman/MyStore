@@ -58,6 +58,13 @@ import { CartDataService } from 'src/app/services/cart-data.service';
               routerLinkActive="active"
               >Manage Orders</a
             >
+            <a
+              *ngIf="authService.isLogin"
+              routerLink="app-user-orders"
+              class="nav-link nav-item"
+              routerLinkActive="active"
+              >Your Orders</a
+            >
           </div>
 
           <div class="navbar-nav">

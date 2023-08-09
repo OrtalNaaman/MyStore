@@ -9,6 +9,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { ManageOrdersComponent } from './components/manage-orders/manage-orders.component';
 import { OrdersManagementGuard } from './guards/orders-management.guard';
 import { EnableCartGuard } from './guards/enable-cart.guard';
+import { UserOrdersComponent } from './components/user-orders/user-orders.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,11 @@ const routes: Routes = [
     path: 'manage-orders',
     component: ManageOrdersComponent,
     canActivate: [OrdersManagementGuard],
+  },
+
+  {
+    path: 'app-user-orders',
+    component: UserOrdersComponent,
   },
 
   { path: '**', redirectTo: 'home' },

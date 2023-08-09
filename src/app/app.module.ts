@@ -25,6 +25,7 @@ import { AuthService } from './services/auth.service';
 import { JwtInterceptor } from './services/interceptors/jwt.interceptor';
 import { ManageOrdersComponent } from './components/manage-orders/manage-orders.component';
 import { OrderComponent } from './components/order/order.component';
+import { UserOrdersComponent } from './components/user-orders/user-orders.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { OrderComponent } from './components/order/order.component';
     SelectSizeComponent,
     ManageOrdersComponent,
     OrderComponent,
+    UserOrdersComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { UserService } from 'src/app/services/user.service';
 import { ToastService } from 'src/app/services/toast.service';
 import { messages } from 'src/app/helpers/constants';
 import { OnDestroy } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-order',
@@ -15,7 +16,11 @@ import { OnDestroy } from '@angular/core';
       <span class="order-price cart-header order-column">PRICE</span>
       <span class="order-quantity cart-header order-column">QUANTITY</span>
       <span class="order-date cart-header order-column">ORDER-DATE</span>
-      <span class="update-del cart-header order-column">UPDATE DELIVERY</span>
+      <span
+        *ngIf="authService.loginUser?.authLevel == 2"
+        class="update-del cart-header order-column"
+        >UPDATE DELIVERY</span
+      >
       <span class="del-date cart-header order-column">DELIVERY-DATE</span>
     </div>
 
@@ -41,7 +46,10 @@ import { OnDestroy } from '@angular/core';
         <span class="order-date order-column">
           {{ order.orderDate | date : 'dd/MM/yyyy' }}</span
         >
-        <div class="update-del order-column">
+        <div
+          *ngIf="authService.loginUser?.authLevel == 2"
+          class="update-del order-column"
+        >
           <button
             (click)="onClickSentBtn(order)"
             class="btn-order-update"
@@ -74,6 +82,7 @@ export class OrderComponent implements OnDestroy {
     public ordersService: OrdersService,
     public storeService: StoreDataService,
     private userService: UserService,
+    public authService: AuthService,
     public toastService: ToastService
   ) {}
 
