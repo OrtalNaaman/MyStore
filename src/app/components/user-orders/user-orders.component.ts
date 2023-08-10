@@ -2,16 +2,14 @@ import { Component } from '@angular/core';
 import { Order } from 'src/app/models/models';
 import { AuthService } from 'src/app/services/auth.service';
 import { OrdersService } from 'src/app/services/orders.service';
-import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-user-orders',
   template: `
     <section class="container content-section">
       <h2 class="section-header">
-        {{ authService.loginUser!.userName }} Orders
+        {{ authService.loginUser!.userName }}'s Orders
       </h2>
-
       <app-order [user]="authService.loginUser!"></app-order>
     </section>
   `,
