@@ -156,7 +156,7 @@
 }
 
 .order-item {
-  width: 30%;
+  width: 27%;
 }
 .order-column {
   display: flex;
@@ -165,6 +165,7 @@
   margin-right: 1.5em;
   padding-bottom: 10px;
   margin-top: 10px;
+  font-size: 1em;
 }
 .cart-row:last-child .order-column {
   border: none;

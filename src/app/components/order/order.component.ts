@@ -19,7 +19,7 @@ import { AuthService } from 'src/app/services/auth.service';
       <span
         *ngIf="authService.loginUser?.authLevel == 2"
         class="update-del cart-header order-column"
-        >UPDATE DELIVERY</span
+        >UPDATE-DELIVERY</span
       >
       <span class="del-date cart-header order-column">DELIVERY-DATE</span>
     </div>
@@ -46,7 +46,7 @@ import { AuthService } from 'src/app/services/auth.service';
         <span class="order-date order-column">
           {{ order.orderDate | date : 'dd/MM/yyyy' }}</span
         >
-        <div
+        <span
           *ngIf="authService.loginUser?.authLevel == 2"
           class="update-del order-column"
         >
@@ -55,15 +55,17 @@ import { AuthService } from 'src/app/services/auth.service';
             class="btn-order-update"
             type="button"
             title="Item has been sent"
+            *ngIf="!order.sent"
           >
             V
           </button>
-        </div>
+          <span *ngIf="order.sent">Order has been sent</span>
+        </span>
         <span *ngIf="order.sent" class="del-date order-column">
           {{ order.deliveryDate | date : 'dd/MM/yyyy' }}</span
         >
         <span *ngIf="!order.sent" class="del-date order-column">
-          order need to be handle</span
+          Order need to be handle</span
         >
       </div>
     </div>
@@ -107,7 +109,9 @@ export class OrderComponent implements OnDestroy {
   onClickSentBtn(orderToUpdate: Order) {
     orderToUpdate.sent = true;
     orderToUpdate.deliveryDate = new Date();
-    this.ordersService.updateOrder(orderToUpdate.id, orderToUpdate);
+    this.ordersService
+      .updateOrder(orderToUpdate.id, orderToUpdate)
+      .subscribe((res) => {});
     this.showSuccess();
   }
   showSuccess() {
