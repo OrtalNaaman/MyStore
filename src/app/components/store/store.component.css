@@ -161,6 +161,7 @@
 .order-column {
   display: flex;
   align-items: center;
+  text-align: center;
   border-bottom: 1px solid white;
   margin-right: 1.5em;
   padding-bottom: 10px;
@@ -177,13 +178,14 @@
 .order-price {
   width: 10%;
   margin-left: 1.5em;
+  justify-self: center;
 }
-.btn-order-update {
-  margin-inline: 6em;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
+.update-del {
+  align-items: center;
 }
 .orders-container {
   min-height: 40vw;
+}
+.btn-order-update {
+  margin: 0 0 0 2.5rem;
 }

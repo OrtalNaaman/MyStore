@@ -46,6 +46,10 @@ import { AuthService } from 'src/app/services/auth.service';
         <span class="order-date order-column">
           {{ order.orderDate | date : 'dd/MM/yyyy' }}</span
         >
+        <!-- <span
+          *ngIf="authService.loginUser?.authLevel == 2"
+          class="update-del order-column"
+        > -->
         <span
           *ngIf="authService.loginUser?.authLevel == 2"
           class="update-del order-column"
@@ -61,6 +65,7 @@ import { AuthService } from 'src/app/services/auth.service';
           </button>
           <span *ngIf="order.sent">Order has been sent</span>
         </span>
+
         <span *ngIf="order.sent" class="del-date order-column">
           {{ order.deliveryDate | date : 'dd/MM/yyyy' }}</span
         >
